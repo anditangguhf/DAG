@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style/styles.css" type="text/css">
+    <link rel="stylesheet" href="../../style/font-awesome.css">
+    <link rel="stylesheet" href="../../lib/w3.css">
+</head>
+
+<body>
+    <!--navbar ru-->
+    <div class="w3-bar w3-light-gray" style="padding-left:10px; padding-right:10px">
+        <a href="index.html">
+            <img src="../../images/logo-transparent.png" class="w3-bar-item" alt="homelogo" style="width: 180px">
+        </a>
+        <div style="padding-top: 3px">
+            <button class="w3-bar-item w3-right w3-button " onclick="document.getElementById('id01').style.display='block'">
+                <i class="fa fa-user-o"></i> войти </button>
+            <!--langdrop ch-->
+            <div class="w3-dropdown-hover w3-right">
+                <button class="w3-button">
+                    <img src="../../images/flags/ru.png" id="langflag"> RU</a>
+                </button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="../ch/signUpSuccess.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/ch.png" id="langflag"> CH</a>
+                    <a href="../jp/signUpSuccess.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/jp.png" id="langflag"> JP</a>
+                    <a href="../en/signUpSuccess.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/en.png" id="langflag"> EN</a>
+                </div>
+            </div>
+            <!---->
+        </div>
+    </div>
+    <!---->
+
+    <div class="w3-row loginsuccess">
+        <div class="w3-half w3-container" style="width:30%;margin-top:10%;margin-left:20%">
+            <img src="../../images/check.png" alt="" style="width:40%">
+        </div>
+        <div class="w3-half w3-container" style="width:30%;margin-top:10%">
+            <h1> Зарегистрировано успешно </h1>
+            <br> Проверьте свою электронную почту, чтобы подтвердить свою учетную запись.
+            <br> Проверьте адрес электронной почты для проверки спама / спама.
+        </div>
+    </div>
+
+
+
+    <!--footer ru-->
+    <footer class="w3-container w3-light-grey w3-cell-row">
+        <div class="w3-container" style="margin:auto; width:80%;">
+            <!--copyright info-->
+            <div class="w3-cell w3-container w3-left" id="footercell" style="padding-left:3%;">
+                <ul style="list-style-type:none">
+                    <li>ScholarshipsTips</li>
+                    <li>&copy; ScholarshipsTips 2017</li>
+                    <li>All Rights Reserved</li>
+                    <li>www.scholarshipstips.com</li>
+                </ul>
+            </div>
+
+            <!--footer social media-->
+            <div class=" w3-cell w3-container w3-right" id="footercell" style="margin-right:6%">
+                <p>Найдите наши социальные сети!</p>
+                <div class="w3-container w3-center" style="margin:auto; width:60%;">
+                    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                    <i class="fa fa-instagram w3-hover-opacity"></i>
+                    <i class="fa fa-twitter w3-hover-opacity"></i>
+                    <i class="fa fa-google-plus w3-hover-opacity"></i>
+                    <i class="fa fa-youtube w3-hover-opacity"></i>
+                </div>
+            </div>
+
+            <!--page links-->
+            <div class="w3-cell w3-container w3-middle" id="footercell" style="width:50%">
+
+                <ul style="list-style-type:none">
+                    <div class="w3-container" style="padding-left:18.5%; padding-right:0px; margin:auto; width:60%">
+                        <li>
+                            <a href="#" class="">дома</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">О КОМПАНИИ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Как с нами связаться</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Политика конфиденциальности</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Условия использования</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--modal login ru-->
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="container">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-right">&times;</span>
+
+                <form class="modal-content" method='post' action="#">
+                    <div class="imgcontainer">
+
+                        <center>
+                            <h1>Авторизоваться</h1>
+                        </center>
+                    </div>
+
+                    <div class="container">
+
+                        <label>
+                            <b>имя пользователя</b>
+                        </label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label>
+                            <b>пароль</b>
+                        </label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <br>
+                        <input type="checkbox" checked="checked"> Запомни меня
+                        <br>
+                        <br>
+                        <a href="forgotPassword.html">Забыли пароль？</a>
+                        <br>
+                        <br>
+                        <span class="psw">
+
+                        </span>
+                        <a class="w3-button w3-border" href="userProfilePage.html"> войти в систему </a>
+                    </div>
+                </form>
+            </div>
+        </form>
+    </div>
+    <!---->
+
+</body>
+
+</html>

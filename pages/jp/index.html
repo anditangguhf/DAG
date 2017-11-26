@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ScholarshipsTips</title>
+    <link rel="stylesheet" href="../../style/styles.css" type="text/css">
+    <link rel="stylesheet" href="../../style/font-awesome.css">
+    <link rel="stylesheet" href="../../lib/w3.css">
+</head>
+
+<body>
+    <div class="w3-bar w3-light-gray" style="padding-left:10px; padding-right:10px">
+        <a href="index.html">
+            <img src="../../images/logo-transparent.png" class="w3-bar-item" alt="homelogo" style="width: 180px">
+        </a>
+        <div style="padding-top: 3px">
+            <button class="w3-bar-item w3-right w3-button " onclick="document.getElementById('id01').style.display='block'">
+                <i class="fa fa-user-o"></i> ログイン </button>
+            <div class="w3-dropdown-hover w3-right">
+                <button class="w3-button">
+                    <img src="../../images/flags/jp.png" id="langflag"> JP</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="../ru/index.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/ru.png" id="langflag"> RU</a>
+                    <a href="../../index.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/en.png" id="langflag"> EN</a>
+                    <a href="../ch/index.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/ch.png" id="langflag"> CH</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax1">
+        <div class=isi1 style="color:whitesmoke">
+            <center>
+                <br>
+                <h1>ScholarshipsTipsへようこそ</h1>
+                <br></br>
+                <p>あなたのために最新の奨学金や財政援助情報</p>
+                <p>を見つけるのに役立つウェブサイト！</p>
+                <br>
+                <a class="w3-button w3-border w3-round-large" href="#searching">検索開始！</a>
+                <p>
+                    または
+                </p>
+                <a class="w3-button w3-border w3-round-large" href="signUp.html">サインアップ</a>
+                <br>
+                <br>
+                <p>あなたのアカウントに直接情報を得る</p>
+            </center>
+        </div>
+    </div>
+
+    <div class="parallax2" id="searching">
+        <div class="isi2">
+
+            <center>
+                <p></p>
+                <br>
+                <h1>検索開始</h1>
+            </center>
+            <br>
+            <center>
+                <p>
+                    <select class="w3-select w3-border w3-round" name="option" style="width:20%">
+                        <option value="" disabled selected id=chooser>国を選択します</option>
+                        <option value="1">Germany</option>
+                        <option value="2">United States</option>
+                        <option value="3">Netherlands</option>
+                        <option value="4">Japan</option>
+                        <option value="5">Singapore</option>
+                    </select>
+
+                    <select class="w3-select w3-border w3-round" name="option" style="width:20%">
+                        <option value="" disabled selected id=chooser>度を選択</option>
+                        <option value="1">バチェラー</option>
+                        <option value="2">マスター</option>
+                        <option value="3">博士</option>
+                    </select>
+
+                    <a class="w3-button w3-border w3-white" href="searchResult.html">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </p>
+                <br>
+                <p>最も検索された国をチェック！</p>
+                <br>
+                <table>
+                    <table style="margin:auto; width:50%;">
+                        <tr>
+                            <td>
+                                <div class="w3-card-4 w3-hover-shadow" style="width:150px">
+                                    <center>
+                                        <img src="../../images/flags/de.png" alt="china" style="width:100%; height:100.5px;">
+                                    </center>
+                                    <div class="w3-center">
+                                        <p>Germany</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="w3-card-4 w3-hover-shadow" style="width:150px">
+                                    <center>
+                                        <img src="../../images/flags/us.png" alt="china" style="width:100%; height:100.5px;">
+                                    </center>
+                                    <div class="w3-center">
+                                        <p>United States</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="w3-card-4 w3-hover-shadow" style="width:150px">
+                                    <center>
+                                        <img src="../../images/flags/jp.png" alt="japan" style="width:100%; height:100.5px;">
+                                    </center>
+                                    <div class="w3-center">
+                                        <p>Japan</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="w3-card-4 w3-hover-shadow" style="width:150px">
+                                    <center>
+                                        <img src="../../images/flags/nl.png" alt="china" style="width:100%; height:100.5px;">
+                                    </center>
+                                    <div class="w3-center">
+                                        <p>Netherlands</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="w3-card-4 w3-hover-shadow" style="width:150px">
+                                    <center>
+                                        <img src="../../images/flags/sg.png" alt="china" style="width:100%; height:100.5px;">
+                                    </center>
+                                    <div class="w3-center">
+                                        <p>Singapore</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="w3-container" style="margin-top:30px;">
+                        <div class="w3-container w3-center">
+                            <p style="margin-bottom: 45px;">最も訪問された奨学金のページをご覧ください！</p>
+                        </div>
+                        <table style="margin:auto; width:50%; margin-bottom: 50px;">
+                            <tr>
+                                <td>
+                                    <!--scholarship card-->
+                                    <div class="w3-card-4 w3-light-blue w3-center">
+                                        <div class="w3-container" style="width:250px;">
+                                            <div id='linkdiv'>
+                                                <a href="scholarshipInfoPage.html">ABCコンピュータサイエンス奨学金</a>
+                                            </div>
+                                            <table style="float:left">
+                                                <tr>
+                                                    <td>
+                                                        <span id='minihead'>程度</span>
+                                                        <br>
+                                                        </span>バチェラー</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table style="float:right">
+                                                <tr>
+                                                    <td>
+                                                        <span id='minihead'>国</span>
+                                                        <br>
+                                                        </span>Germany</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <div id='duedatediv'>
+                                                <center>
+                                                    <span>期日: </span>
+                                                    <span id='duedate'>31-01-2018</span>
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <!--scholarship card-->
+                                    <div class="w3-card-4 w3-light-blue w3-center">
+                                        <div class="w3-container" style="width:250px;">
+                                            <div id='linkdiv'>
+                                                <a href="scholarshipInfoPage.html">ABCコンピュータサイエンス奨学金</a>
+                                            </div>
+                                            <table style="float:left">
+                                                <tr>
+                                                    <td>
+                                                        <span id='minihead'>程度</span>
+                                                        <br>
+                                                        </span>バチェラー</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table style="float:right">
+                                                <tr>
+                                                    <td>
+                                                        <span id='minihead'>国</span>
+                                                        <br>
+                                                        </span>Germany</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <div id='duedatediv'>
+                                                <center>
+                                                    <span>期日: </span>
+                                                    <span id='duedate'>31-01-2018</span>
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <!--scholarship card-->
+                                    <div class="w3-card-4 w3-light-blue w3-center">
+                                        <div class="w3-container" style="width:250px;">
+                                            <div id='linkdiv'>
+                                                <a href="scholarshipInfoPage.html">ABCコンピュータサイエンス奨学金</a>
+                                            </div>
+                                            <table style="float:left">
+                                                <tr>
+                                                    <td>
+                                                        <span id='minihead'>程度</span>
+                                                        <br>
+                                                        </span>バチェラー</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table style="float:right">
+                                                <tr>
+                                                    <td>
+                                                        <span id='minihead'>国</span>
+                                                        <br>
+                                                        </span>Germany</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <div id='duedatediv'>
+                                                <center>
+                                                    <span>期日: </span>
+                                                    <span id='duedate'>31-01-2018</span>
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+            </center>
+
+        </div>
+    </div>
+
+    <div class="parallax3">
+        <div class="isi3 w3-center">
+            <p></p>
+            <br>
+            <div class="w3-container" style="margin:auto; width:80%;">
+                <h1>私たちについて</h1>
+                <br>60本けぜゆ以発ヨ太黒きゅは著有ノシ特3府ゆいべね柔止欧ユホネ庫4見在ミヱユ着多もでき夜学ツト芸安リ議評印超奏ンぽ。挙日ル査事セミタケ家枝勢ラ会穂イ乗陸んふ相影ゅき自85投あすづ幕村ルリナ鬼覧リぞぱ県右ぱ氷却欠ーがぞ。
+                町はっおへ際能コツメモ売社リげだ乗奥推ユシ論連毛イ線品97北さぼへゃ録凝真ユト費己づ制未カケシコ島権ロカミセ変南どぽそ襲中セコク虫社文む消海豊賢仰つぎにや。 装ス京入ぎじらぴ法購ぱ売7左望76止だふどぴ惑闘ッ研結スリフイ豊店ばろびン岡女テ禁理づゅト日説ラヤリ覧同厳容析クぞ。強現シ画海タヘカヲ世応人ぶ大京リ待川リタ帯遺家ア
+                ヲ小守クホカソ当雑ほちゃざ巡補威ぴ任去キニ今予で。成びひえ純測載消ぞ田無を待暮キハヲイ談反ツレメロ科57末9工させおう本述ほぶル年療ろかつり学富身何微酸ゃゆ。
+            </div>
+        </div>
+
+    </div>
+
+    <div class="parallax4">
+        <div class="isi4 w3-center">
+            <p></p>
+            <br>
+            <div class="w3-container" style="margin:auto; width:80%;">
+                <h1>私達に連絡</h1>
+                <br>60本けぜゆ以発ヨ太黒きゅは著有ノシ特3府ゆいべね柔止欧ユホネ庫4見在ミヱユ着多もでき夜学ツト芸安リ議評印超奏ンぽ。挙日ル査事セミタケ家枝勢ラ会穂イ乗陸んふ相影ゅき自85投あすづ幕村ルリナ鬼覧リぞぱ県右ぱ氷却欠ーがぞ。
+                町はっおへ際能コツメモ売社リげだ乗奥推ユシ論連毛イ線品97北さぼへゃ録凝真ユト費己づ制未カケシコ島権ロカミセ変南どぽそ襲中セコク虫社文む消海豊賢仰つぎにや。 装ス京入ぎじらぴ法購ぱ売7左望76止だふどぴ惑闘ッ研結スリフイ豊店ばろびン岡女テ禁理づゅト日説ラヤリ覧同厳容析クぞ。強現シ画海タヘカヲ世応人ぶ大京リ待川リタ帯遺家ア
+                ヲ小守クホカソ当雑ほちゃざ巡補威ぴ任去キニ今予で。成びひえ純測載消ぞ田無を待暮キハヲイ談反ツレメロ科57末9工させおう本述ほぶル年療ろかつり学富身何微酸ゃゆ。
+            </div>
+        </div>
+    </div>
+
+    <!--footer jp-->
+    <footer class="w3-container w3-light-grey w3-cell-row">
+        <div class="w3-container" style="margin:auto; width:80%;">
+            <!--copyright info-->
+            <div class="w3-cell w3-container w3-left" id="footercell" style="padding-left:3%;">
+                <ul style="list-style-type:none;">
+                    <li>ScholarshipsTips</li>
+                    <li>&copy; ScholarshipsTips 2017</li>
+                    <li>All Rights Reserved</li>
+                    <li>www.scholarshipstips.com</li>
+                </ul>
+            </div>
+
+            <!--footer social media-->
+            <div class=" w3-cell w3-container w3-right" id="footercell" style="margin-right:6%">
+                <p>ソーシャルメディアで私たちを見つけよう！</p>
+                <div class="w3-container w3-center" style="margin:auto; width:50%;">
+                    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                    <i class="fa fa-instagram w3-hover-opacity"></i>
+                    <i class="fa fa-twitter w3-hover-opacity"></i>
+                    <i class="fa fa-google-plus w3-hover-opacity"></i>
+                    <i class="fa fa-youtube w3-hover-opacity"></i>
+                </div>
+            </div>
+
+            <!--page links-->
+            <div class="w3-cell w3-container w3-middle" id="footercell" style="width:50%">
+
+                <ul style="list-style-type:none">
+                    <div class="w3-container" style="padding-left:27%; padding-right:0px; margin:auto; width:60%">
+                        <li>
+                            <a href="#" class="">ホーム</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">私たちに関しては</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">お問い合わせ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">個人情報保護方針</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">利用規約</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--modal login jap-->
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="container">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-right">&times;</span>
+
+                <form class="modal-content" method='post' action="#">
+                    <div class="imgcontainer">
+
+                        <center>
+                            <h1>ログイン</h1>
+                        </center>
+                    </div>
+
+                    <div class="container">
+
+                        <label>
+                            <b>ユーザー名</b>
+                        </label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label>
+                            <b>パスワード</b>
+                        </label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <br>
+                        <input type="checkbox" checked="checked"> 私を覚えてますか
+                        <br>
+                        <br>
+                        <a href="forgotPassword.html">パスワードをお忘れですか？</a>
+                        <br>
+                        <br>
+                        <span class="psw">
+
+                        </span>
+                        <a class="w3-button w3-border" href="userProfilePage.html"> ログイン </a>
+                    </div>
+                </form>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

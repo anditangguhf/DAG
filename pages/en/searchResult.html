@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ScholarshipsTips.com | Search Result</title>
+    <link rel="stylesheet" href="../../style/styles.css" type="text/css">
+    <link rel="stylesheet" href="../../style/font-awesome.css">
+    <link rel="stylesheet" href="../../lib/w3.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="w3-bar w3-light-gray" style="padding-left:10px; padding-right:10px">
+        <a href="../../index.html">
+            <img src="../../images/logo-transparent.png" class="w3-bar-item" alt="homelogo" style="width: 180px">
+        </a>
+        <div style="padding-top: 3px">
+            <button class="w3-bar-item w3-right w3-button " onclick="document.getElementById('id01').style.display='block'">
+                <i class="fa fa-user-o"></i> Login </button>
+            <div class="w3-dropdown-hover w3-right">
+                <button class="w3-button">
+                    <img src="../../images/flags/en.png" id="langflag"> EN</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="../ru/searchResult.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/ru.png" id="langflag"> RU</a>
+                    <a href="../jp/searchResult.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/jp.png" id="langflag"> JP</a>
+                    <a href="../ch/searchResult.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/ch.png" id="langflag"> CH</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--choice box-->
+    <div class="w3-container w3-center" style="margin-top: 10px">
+        <h2>Here's your result!</h2>
+        <div class="w3-container w3-cell-row" style="margin: auto; width:50%; margin-top:35px;">
+            <div class="w3-container w3-cell">
+                <select class="w3-select w3-border" name="option">
+                    <option value="0" disabled>Choose country</option>
+                    <option value="" selected>Germany</option>
+                    <option value="2">United States</option>
+                    <option value="3">Netherlands</option>
+                    <option value="4">Japan</option>
+                    <option value="5">Singapore</option>
+                </select>
+            </div>
+            <div class="w3-container w3-cell">
+                <select class="w3-select w3-border" name="option">
+                    <option value="0" disabled selected>Choose degree</option>
+                    <option value="" selected>Bachelor</option>
+                    <option value="2">Master</option>
+                    <option value="3">Doctorate</option>
+                </select>
+            </div>
+            <div class="w3-container" style="padding:0;">
+                <button class="w3-button w3-border w3-round-large" style="">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--result table-->
+    <div class="w3-container w3-margin-top w3-padding-48">
+        <table class="w3-table-all w3-hoverable w3-centered" style="font-size:13px;" id="beasiswa">
+            <thead>
+                <tr class="w3-light-grey">
+                    <th onclick="sortTable(0)">Scholarship Name</th>
+                    <th onclick="sortTable(1)">Degree</th>
+                    <th onclick="sortTable(2)">University</th>
+                    <th onclick="sortTable(3)">Country</th>
+                    <th onclick="sortTable(4)">Due Date</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <a href="scholarshipInfoPage.html">ABA Scholarship for Computer Science</a>
+                </td>
+                <td>Bachelor</td>
+                <td>German University</td>
+                <td>Germany</td>
+                <td>31-01-2018</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="scholarshipInfoPage.html">FAB Scholarship for Computer Science</a>
+                </td>
+                <td>Bachelor</td>
+                <td>BCDA University</td>
+                <td>Germany</td>
+                <td>28-02-2018</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="scholarshipInfoPage.html">CBB Scholarship for Computer Science</a>
+                </td>
+                <td>Bachelor</td>
+                <td>Berlin University</td>
+                <td>Germany</td>
+                <td>31-01-2018</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="scholarshipInfoPage.html">MXA Scholarship for Computer Science</a>
+                </td>
+                <td>Bachelor</td>
+                <td>Dresden University</td>
+                <td>Germany</td>
+                <td>31-01-2018</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="scholarshipInfoPage.html">DFA Scholarship for Computer Science</a>
+                </td>
+                <td>Bachelor</td>
+                <td>German University</td>
+                <td>Germany</td>
+                <td>31-01-2018</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="scholarshipInfoPage.html">QWA Scholarship for Computer Science</a>
+                </td>
+                <td>Bachelor</td>
+                <td>Berlin University</td>
+                <td>Germany</td>
+                <td>31-01-2018</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="scholarshipInfoPage.html">ABG Scholarship for Computer Science</a>
+                </td>
+                <td>Bachelor</td>
+                <td>Dresden University</td>
+                <td>Germany</td>
+                <td>31-01-2018</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="scholarshipInfoPage.html">PAL Scholarship for Computer Science</a>
+                </td>
+                <td>Bachelor</td>
+                <td>Berlin University</td>
+                <td>Germany</td>
+                <td>31-01-2018</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="scholarshipInfoPage.html">RET Scholarship for Computer Science</a>
+                </td>
+                <td>Bachelor</td>
+                <td>German University</td>
+                <td>Germany</td>
+                <td>31-01-2018</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="scholarshipInfoPage.html">ABJ Scholarship for Computer Science</a>
+                </td>
+                <td>Bachelor</td>
+                <td>Dresden University</td>
+                <td>Germany</td>
+                <td>31-01-2018</td>
+            </tr>
+        </table>
+    </div>
+
+    <!--table pagination-->
+    <div class="w3-center w3-margin-bottom">
+        <div class="w3-bar">
+            <a href="#" class="w3-bar-item w3-button">&laquo;</a>
+            <a href="#" class="w3-button w3-grey">1</a>
+            <a href="searchResult2.html" class="w3-button">2</a>
+            <a href="#" class="w3-button">3</a>
+            <a href="#" class="w3-button">4</a>
+            <a href="#" class="w3-button">&raquo;</a>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer class="w3-container w3-light-grey w3-cell-row">
+        <div class="w3-container" style="margin:auto; width:80%;">
+            <!--copyright info-->
+            <div class="w3-cell w3-container w3-left" id="footercell" style="padding-left:3%;">
+                <ul style="list-style-type:none;">
+                    <li>ScholarshipsTips</li>
+                    <li>&copy; ScholarshipsTips 2017</li>
+                    <li>All Rights Reserved</li>
+                    <li>www.scholarshipstips.com</li>
+                </ul>
+            </div>
+
+            <!--footer social media-->
+            <div class=" w3-cell w3-container w3-right" id="footercell" style="margin-right:6%">
+                <p>Find us on social medias!</p>
+                <div class="w3-container w3-center" style="margin:auto; width:80%;">
+                    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                    <i class="fa fa-instagram w3-hover-opacity"></i>
+                    <i class="fa fa-twitter w3-hover-opacity"></i>
+                    <i class="fa fa-google-plus w3-hover-opacity"></i>
+                    <i class="fa fa-youtube w3-hover-opacity"></i>
+                </div>
+            </div>
+
+            <!--page links-->
+            <div class="w3-cell w3-container w3-middle" id="footercell" style="width:50%">
+
+                <ul style="list-style-type:none">
+                    <div class="w3-container" style="padding-left:33.5%; padding-right:0px; margin:auto; width:60%">
+                        <li>
+                            <a href="#" class="">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Terms Of Use</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--modal login-->
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="container">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-right">&times;</span>
+
+                <form class="modal-content" method='post' action="#">
+                    <div class="imgcontainer">
+
+                        <center>
+                            <h1>Login</h1>
+                        </center>
+                    </div>
+
+                    <div class="container">
+
+                        <label>
+                            <b>Username</b>
+                        </label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label>
+                            <b>Password</b>
+                        </label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <br>
+                        <input type="checkbox" checked="checked"> Remember me
+                        <br>
+                        <br>
+                        <a href="forgotPassword.html">Forgot password?</a>
+                        <br>
+                        <br>
+                        <span class="psw">
+
+                        </span>
+                        <a class="w3-button w3-border" href="userProfilePage.html"> Sign In </a>
+                    </div>
+                </form>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function sortTable(n) {
+            var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+            table = document.getElementById("beasiswa");
+            switching = true;
+
+            dir = "asc";
+
+            while (switching) {
+                switching = false;
+                rows = table.getElementsByTagName("tr");
+
+                for (i = 1; i < (rows.length - 1); i++) {
+                    shouldSwitch = false;
+
+                    x = rows[i].getElementsByTagName("td")[n];
+                    y = rows[i + 1].getElementsByTagName("td")[n];
+
+                    if (dir == "asc") {
+                        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                            shouldSwitch = true;
+                            break;
+                        }
+                    }
+                    else if (dir == "desc") {
+                        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                            shouldSwitch = true;
+                            break;
+                        }
+                    }
+                }
+
+                if (shouldSwitch) {
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switchcount++;
+                }
+                else {
+                    if (switchcount == 0 && dir == "asc") {
+                        dir = "desc";
+                        switching = true;
+                    }
+                }
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

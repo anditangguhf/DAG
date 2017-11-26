@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style/styles.css" type="text/css">
+    <link rel="stylesheet" href="../../style/font-awesome.css">
+    <link rel="stylesheet" href="../../lib/w3.css">
+</head>
+
+<body>
+    <div class="w3-bar w3-light-gray" style="padding-left:10px; padding-right:10px">
+        <a href="index.html">
+            <img src="../../images/logo-transparent.png" class="w3-bar-item" alt="homelogo" style="width: 180px">
+        </a>
+        <div style="padding-top: 3px">
+            <button class="w3-bar-item w3-right w3-button " onclick="document.getElementById('id01').style.display='block'">
+                <i class="fa fa-user-o"></i> ログイン </button>
+            <div class="w3-dropdown-hover w3-right">
+                <button class="w3-button">
+                    <img src="../../images/flags/jp.png" id="langflag"> JP</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="../ru/confirmationPage.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/ru.png" id="langflag"> RU</a>
+                    <a href="../en/confirmationPage.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/en.png" id="langflag"> EN</a>
+                    <a href="../ch/confirmationPage.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/ch.png" id="langflag"> CH</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="confirmationPage">
+        <div class="w3-card-4 w3-display-middle w3-center " style="width:70%;">
+            <p>あなたのパスワードをリセットするためのリンクを含むメッセージがあなたのメールアドレスに送信されました。</p>
+            <p> セキュリティ上の理由から、リンクは1時間しか使用できません。</p>
+            <p>5分以内にメールが届かない場合は、迷惑メールフォルダを確認してください。</p>
+        </div>
+    </div>
+
+    <!--footer jp-->
+    <footer class="w3-container w3-light-grey w3-cell-row">
+        <div class="w3-container" style="margin:auto; width:80%;">
+            <!--copyright info-->
+            <div class="w3-cell w3-container w3-left" id="footercell" style="padding-left:3%;">
+                <ul style="list-style-type:none;">
+                    <li>ScholarshipsTips</li>
+                    <li>&copy; ScholarshipsTips 2017</li>
+                    <li>All Rights Reserved</li>
+                    <li>www.scholarshipstips.com</li>
+                </ul>
+            </div>
+
+            <!--footer social media-->
+            <div class=" w3-cell w3-container w3-right" id="footercell" style="margin-right:6%">
+                <p>ソーシャルメディアで私たちを見つけよう！</p>
+                <div class="w3-container w3-center" style="margin:auto; width:50%;">
+                    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                    <i class="fa fa-instagram w3-hover-opacity"></i>
+                    <i class="fa fa-twitter w3-hover-opacity"></i>
+                    <i class="fa fa-google-plus w3-hover-opacity"></i>
+                    <i class="fa fa-youtube w3-hover-opacity"></i>
+                </div>
+            </div>
+
+            <!--page links-->
+            <div class="w3-cell w3-container w3-middle" id="footercell" style="width:50%">
+
+                <ul style="list-style-type:none">
+                    <div class="w3-container" style="padding-left:27%; padding-right:0px; margin:auto; width:60%">
+                        <li>
+                            <a href="#" class="">ホーム</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">私たちに関しては</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">お問い合わせ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">個人情報保護方針</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">利用規約</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

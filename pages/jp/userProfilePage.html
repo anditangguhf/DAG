@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ScholarshipsTips.com | User Profile</title>
+    <link rel="stylesheet" href="../../style/styles.css" type="text/css">
+    <link rel="stylesheet" href="../../style/font-awesome.css">
+    <link rel="stylesheet" href="../../lib/w3.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="w3-bar w3-light-gray" style="padding-left:10px; padding-right:10px">
+        <a href="index.html">
+            <img src="../../images/logo-transparent.png" class="w3-bar-item" alt="homelogo" style="width: 180px">
+        </a>
+        <div style="padding-top: 3px">
+            <div class="w3-dropdown-hover w3-right" style="margin-right:8%">
+                <button class="w3-button w3-transparent">
+                    <i class="fa fa-user-o"></i> Mimi </button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-center" style="width:15%">
+                    <a href="userProfilePage.html">
+                        <div>
+                            <img src="../../images/default-user-image.png" class="w3-circle" style="width:110px;" alt="userimage">
+
+                            <p>MIMI AISHERA VEALIS</p>
+                            <p>mimishera@gmail.com</p>
+                        </div>
+                    </a>
+                    <span style="font-size:10px">
+                        <a href="editProfilePage.html">
+                            <i class="fa fa-gear"></i> プロファイル編集
+                        </a>
+                    </span>
+                    <br>
+                    <span style="font-size:10px">
+                        <a href="index.html">
+                            <i class="fa fa-sign-out"></i> ログアウト
+                        </a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="w3-dropdown-hover w3-right">
+                <button class="w3-button">
+                    <img src="../../images/flags/jp.png" id="langflag"> JP</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="../ru/userProfilePage.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/ru.png" id="langflag"> RU</a>
+                    <a href="../en/userProfilePage.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/en.png" id="langflag"> EN</a>
+                    <a href="../ch/userProfilePage.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/ch.png" id="langflag"> CH</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--content-->
+    <div id="profilecontainer" style="margin-top:30px;">
+        <div class="w3-container w3-light-grey w3-center w3-round-xlarge" style="margin: auto; width:50%; padding: 13px">
+            <div style="margin:10px;"></div>
+
+            <div style="width:210px; margin:auto; padding-left:8px;">
+                <img src="../../images/default-user-image.png" class="w3-circle w3-center" style="width:150px;" alt="userimage">
+                <span style="float:right; font-size:20px">
+                    <a href="editProfilePage.html">
+                        <i class="fa fa-gear"></i>
+                    </a>
+                </span>
+            </div>
+
+            <p>もしもし,</p>
+            <p id='userinfo'>MIMI AISHERA VEALIS</p>
+            <p id='userinfo'>mimishera@gmail.com</p>
+            <div style="margin:17px"></div>
+            <table style="float:left; margin-left: 30px">
+                <tr>
+                    <td>
+                        <p id='preferencehead'>あなたの現在の学位:</p>
+                        <p>バチェラー</p>
+                    </td>
+                </tr>
+            </table>
+            <table style="float:right; margin-right: 30px">
+                <tr>
+                    <td>
+                        <p id='preferencehead'>あなたの現在の国の好み:</p>
+                        <p>Germany</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="w3-container" style="margin-top:30px;">
+            <div class="w3-container w3-center">
+                <p>奨学金の推薦状をあなたにチェックしてください！</p>
+            </div>
+            <table style="margin:auto; width:50%;">
+                <tr>
+                    <td>
+                        <!--scholarship card-->
+                        <div class="w3-card-4 w3-light-blue w3-center">
+                            <div class="w3-container" style="width:250px;">
+                                <div id='linkdiv'>
+                                    <a href="scholarshipInfoPage.html">ABCコンピュータサイエンス奨学金</a>
+                                </div>
+                                <table style="float:left">
+                                    <tr>
+                                        <td>
+                                            <span id='minihead'>程度</span>
+                                            <br>
+                                            </span>バチェラー</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table style="float:right">
+                                    <tr>
+                                        <td>
+                                            <span id='minihead'>国</span>
+                                            <br>
+                                            </span>Germany</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div id='duedatediv'>
+                                    <center>
+                                        <span>期日: </span>
+                                        <span id='duedate'>31-01-2018</span>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!--scholarship card-->
+                        <div class="w3-card-4 w3-light-blue w3-center">
+                            <div class="w3-container" style="width:250px;">
+                                <div id='linkdiv'>
+                                    <a href="scholarshipInfoPage.html">ABCコンピュータサイエンス奨学金</a>
+                                </div>
+                                <table style="float:left">
+                                    <tr>
+                                        <td>
+                                            <span id='minihead'>程度</span>
+                                            <br>
+                                            </span>バチェラー</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table style="float:right">
+                                    <tr>
+                                        <td>
+                                            <span id='minihead'>国</span>
+                                            <br>
+                                            </span>Germany</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div id='duedatediv'>
+                                    <center>
+                                        <span>期日: </span>
+                                        <span id='duedate'>31-01-2018</span>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!--scholarship card-->
+                        <div class="w3-card-4 w3-light-blue w3-center">
+                            <div class="w3-container" style="width:250px;">
+                                <div id='linkdiv'>
+                                    <a href="scholarshipInfoPage.html">ABCコンピュータサイエンス奨学金</a>
+                                </div>
+                                <table style="float:left">
+                                    <tr>
+                                        <td>
+                                            <span id='minihead'>程度</span>
+                                            <br>
+                                            </span>バチェラー</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table style="float:right">
+                                    <tr>
+                                        <td>
+                                            <span id='minihead'>国</span>
+                                            <br>
+                                            </span>Germany</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div id='duedatediv'>
+                                    <center>
+                                        <span>期日: </span>
+                                        <span id='duedate'>31-01-2018</span>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="w3-container" style="margin-top:30px;">
+            <div class="w3-container w3-center">
+                <p>最も訪問された奨学金のページをご覧ください！</p>
+            </div>
+            <table style="margin:auto; width:50%; margin-bottom: 50px;">
+                <tr>
+                    <td>
+                        <!--scholarship card-->
+                        <div class="w3-card-4 w3-light-blue w3-center">
+                            <div class="w3-container" style="width:250px;">
+                                <div id='linkdiv'>
+                                    <a href="scholarshipInfoPage.html">ABCコンピュータサイエンス奨学金</a>
+                                </div>
+                                <table style="float:left">
+                                    <tr>
+                                        <td>
+                                            <span id='minihead'>程度</span>
+                                            <br>
+                                            </span>バチェラー</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table style="float:right">
+                                    <tr>
+                                        <td>
+                                            <span id='minihead'>国</span>
+                                            <br>
+                                            </span>Germany</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div id='duedatediv'>
+                                    <center>
+                                        <span>期日: </span>
+                                        <span id='duedate'>31-01-2018</span>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!--scholarship card-->
+                        <div class="w3-card-4 w3-light-blue w3-center">
+                            <div class="w3-container" style="width:250px;">
+                                <div id='linkdiv'>
+                                    <a href="scholarshipInfoPage.html">ABCコンピュータサイエンス奨学金</a>
+                                </div>
+                                <table style="float:left">
+                                    <tr>
+                                        <td>
+                                            <span id='minihead'>程度</span>
+                                            <br>
+                                            </span>バチェラー</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table style="float:right">
+                                    <tr>
+                                        <td>
+                                            <span id='minihead'>国</span>
+                                            <br>
+                                            </span>Germany</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div id='duedatediv'>
+                                    <center>
+                                        <span>期日: </span>
+                                        <span id='duedate'>31-01-2018</span>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!--scholarship card-->
+                        <div class="w3-card-4 w3-light-blue w3-center">
+                            <div class="w3-container" style="width:250px;">
+                                <div id='linkdiv'>
+                                    <a href="scholarshipInfoPage.html">ABCコンピュータサイエンス奨学金</a>
+                                </div>
+                                <table style="float:left">
+                                    <tr>
+                                        <td>
+                                            <span id='minihead'>程度</span>
+                                            <br>
+                                            </span>バチェラー</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table style="float:right">
+                                    <tr>
+                                        <td>
+                                            <span id='minihead'>国</span>
+                                            <br>
+                                            </span>Germany</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div id='duedatediv'>
+                                    <center>
+                                        <span>期日: </span>
+                                        <span id='duedate'>31-01-2018</span>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!--footer jp-->
+    <footer class="w3-container w3-light-grey w3-cell-row">
+        <div class="w3-container" style="margin:auto; width:80%;">
+            <!--copyright info-->
+            <div class="w3-cell w3-container w3-left" id="footercell" style="padding-left:3%;">
+                <ul style="list-style-type:none;">
+                    <li>ScholarshipsTips</li>
+                    <li>&copy; ScholarshipsTips 2017</li>
+                    <li>All Rights Reserved</li>
+                    <li>www.scholarshipstips.com</li>
+                </ul>
+            </div>
+
+            <!--footer social media-->
+            <div class=" w3-cell w3-container w3-right" id="footercell" style="margin-right:6%">
+                <p>ソーシャルメディアで私たちを見つけよう！</p>
+                <div class="w3-container w3-center" style="margin:auto; width:50%;">
+                    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                    <i class="fa fa-instagram w3-hover-opacity"></i>
+                    <i class="fa fa-twitter w3-hover-opacity"></i>
+                    <i class="fa fa-google-plus w3-hover-opacity"></i>
+                    <i class="fa fa-youtube w3-hover-opacity"></i>
+                </div>
+            </div>
+
+            <!--page links-->
+            <div class="w3-cell w3-container w3-middle" id="footercell" style="width:50%">
+
+                <ul style="list-style-type:none">
+                    <div class="w3-container" style="padding-left:27%; padding-right:0px; margin:auto; width:60%">
+                        <li>
+                            <a href="#" class="">ホーム</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">私たちに関しては</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">お問い合わせ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">個人情報保護方針</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">利用規約</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

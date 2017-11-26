@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ScholarshipsTips.com | Sign Up</title>
+    <link rel="stylesheet" href="../../style/styles.css" type="text/css">
+    <link rel="stylesheet" href="../../style/font-awesome.css">
+    <link rel="stylesheet" href="../../lib/w3.css">
+</head>
+
+<body class="signup">
+    <!--navbar-->
+    <div class="w3-bar w3-light-gray" style="padding-left:10px; padding-right:10px">
+        <a href="../../index.html">
+            <img src="../../images/logo-transparent.png" class="w3-bar-item" alt="homelogo" style="width: 180px">
+        </a>
+        <div style="padding-top: 3px">
+            <button class="w3-bar-item w3-right w3-button " onclick="document.getElementById('id01').style.display='block'">
+                <i class="fa fa-user-o"></i> Login </button>
+            <div class="w3-dropdown-hover w3-right">
+                <button class="w3-button">
+                    <img src="../../images/flags/en.png" id="langflag"> EN</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="../ru/signUp.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/ru.png" id="langflag"> RU</a>
+                    <a href="../jp/signUp.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/jp.png" id="langflag"> JP</a>
+                    <a href="../ch/signUp.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/ch.png" id="langflag"> CH</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--sign up form-->
+    <div class="w3-container w3-center">
+        <form class="w3-container" style="margin: auto; width:30%;color:whitesmoke" id="signupform">
+            <!--empty div-->
+            <div style="padding: 7px;"></div>
+
+            <h2>Sign Up</h2>
+
+            <!--empty div-->
+            <div style="padding: 15px;"></div>
+
+            <p>
+                <label>Username</label>
+                <input class="w3-input w3-border w3-round-large" name="username" type="text">
+            </p>
+            <p>
+                <label>Password</label>
+                <input class="w3-input w3-border w3-round-large" name="pw" type="password">
+                <label style="font-size: 13px">Case sensitive. Must be 8-16 characters.</label>
+            </p>
+            <p>
+                <label>Confirm Password</label>
+                <input class="w3-input w3-border w3-round-large" name="pw" type="password">
+            </p>
+            <p>
+                <label>E-Mail</label>
+                <input class="w3-input w3-border w3-round-large" name="email" type="email">
+            </p>
+            <p>
+                <label>Country preference</label>
+                <select class="w3-select w3-border w3-round-large" name="option">
+                    <option value="" disabled selected id=chooser>Choose country</option>
+                    <option value="1">Germany</option>
+                    <option value="2">United States</option>
+                    <option value="3">Netherlands</option>
+                    <option value="4">Japan</option>
+                    <option value="5">Singapore</option>
+                </select>
+            </p>
+            <p>
+                <label>Degree preference</label>
+                <select class="w3-select w3-border w3-round-large" name="option">
+                    <option value="" disabled selected id=chooser>Choose degree</option>
+                    <option value="1">Bachelor</option>
+                    <option value="2">Master</option>
+                    <option value="3">Doctorate</option>
+                </select>
+            </p>
+            <div class="w3-center">
+                <input class="w3-check" type="checkbox">
+                <label style="font-size: 11px;">I Agree to the
+                    <a href="">Terms of Use</a> and
+                    <a href="">Privacy Policy</a>
+                </label>
+                <br>
+                <br>
+                <a href="signupSuccess.html" class="w3-button w3-round w3-border w3-light-grey">Register Now</a>
+                <br>
+                <br>
+            </div>
+
+
+        </form>
+    </div>
+
+    <!--footer-->
+    <footer class="w3-container w3-light-grey w3-cell-row">
+        <div class="w3-container" style="margin:auto; width:80%;">
+            <!--copyright info-->
+            <div class="w3-cell w3-container w3-left" id="footercell" style="padding-left:3%;">
+                <ul style="list-style-type:none;">
+                    <li>ScholarshipsTips</li>
+                    <li>&copy; ScholarshipsTips 2017</li>
+                    <li>All Rights Reserved</li>
+                    <li>www.scholarshipstips.com</li>
+                </ul>
+            </div>
+
+            <!--footer social media-->
+            <div class=" w3-cell w3-container w3-right" id="footercell" style="margin-right:6%">
+                <p>Find us on social medias!</p>
+                <div class="w3-container w3-center" style="margin:auto; width:80%;">
+                    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                    <i class="fa fa-instagram w3-hover-opacity"></i>
+                    <i class="fa fa-twitter w3-hover-opacity"></i>
+                    <i class="fa fa-google-plus w3-hover-opacity"></i>
+                    <i class="fa fa-youtube w3-hover-opacity"></i>
+                </div>
+            </div>
+
+            <!--page links-->
+            <div class="w3-cell w3-container w3-middle" id="footercell" style="width:50%">
+
+                <ul style="list-style-type:none">
+                    <div class="w3-container" style="padding-left:33.5%; padding-right:0px; margin:auto; width:60%">
+                        <li>
+                            <a href="#" class="">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Terms Of Use</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--modal login-->
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="container">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-right">&times;</span>
+
+                <form class="modal-content" method='post' action="#">
+                    <div class="imgcontainer">
+
+                        <center>
+                            <h1>Login</h1>
+                        </center>
+                    </div>
+
+                    <div class="container">
+
+                        <label>
+                            <b>Username</b>
+                        </label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label>
+                            <b>Password</b>
+                        </label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <br>
+                        <input type="checkbox" checked="checked"> Remember me
+                        <br>
+                        <br>
+                        <a href="forgotPassword.html">Forgot password?</a>
+                        <br>
+                        <br>
+                        <span class="psw">
+
+                        </span>
+                        <a class="w3-button w3-border" href="userProfilePage.html"> Sign In </a>
+                    </div>
+                </form>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

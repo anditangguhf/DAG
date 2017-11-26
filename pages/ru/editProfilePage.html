@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ScholarshipsTips.com | Edit Profile</title>
+    <link rel="stylesheet" href="../../style/styles.css" type="text/css">
+    <link rel="stylesheet" href="../../style/font-awesome.css">
+    <link rel="stylesheet" href="../../lib/w3.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="w3-bar w3-light-gray" style="padding-left:10px; padding-right:10px">
+        <a href="index.html">
+            <img src="../../images/logo-transparent.png" class="w3-bar-item" alt="homelogo" style="width: 180px">
+        </a>
+        <div style="padding-top: 3px">
+            <div class="w3-dropdown-hover w3-right" style="margin-right:8%">
+                <button class="w3-button w3-transparent">
+                    <i class="fa fa-user-o"></i> Mimi </button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-center" style="width:15%">
+                    <a href="userProfilePage.html">
+                        <img src="../../images/default-user-image.png" class="w3-circle" style="width:110px;" alt="userimage">
+                    </a>
+                    <p>MIMI AISHERA VEALIS</p>
+                    <p>mimishera@gmail.com</p>
+                    <span style="font-size:10px">
+                        <a href="editProfilePage.html">
+                            <i class="fa fa-gear"></i> Изменение личной информации
+                        </a>
+                    </span>
+                    <br>
+                    <span style="font-size:10px">
+                        <a href="../../index.html">
+                            <i class="fa fa-sign-out"></i> Выход из системы
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <!--langdrop ch-->
+            <div class="w3-dropdown-hover w3-right">
+                <button class="w3-button">
+                    <img src="../../images/flags/ru.png" id="langflag"> RU</a>
+                </button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="../ch/editProfilePage.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/ch.png" id="langflag"> CH</a>
+                    <a href="../jp/editProfilePage.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/jp.png" id="langflag"> JP</a>
+                    <a href="../en/editProfilePage.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/en.png" id="langflag"> EN</a>
+                </div>
+            </div>
+            <!---->
+        </div>
+    </div>
+
+    <!--content-->
+    <div id="profilecontainer" style="margin-top:30px;">
+        <div class="w3-container w3-light-grey  w3-round-xlarge" style="margin: auto; width:50%; margin-bottom: 30px;">
+            <div style="margin:10px;"></div>
+            <h2>Изменение личной информации</h2>
+            <div class="w3-container w3-center" style="margin:auto; width:50%;">
+                <img src="../../images/default-user-image.png" class="w3-circle" style="width:150px;" alt="userimage">
+            </div>
+            <div class="w3-container" id='tablecontainer'>
+                <table>
+                    <tr>
+                        <td>Ваше имя: </td>
+                        <td></td>
+                        <td>
+                            <input class="w3-input w3-border w3-round-large" name="name" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Электронная почта: </td>
+                        <td></td>
+                        <td>
+                            <input class="w3-input w3-border w3-round-large" name="email" type="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Степень предпочтений: </td>
+                        <td></td>
+                        <td>
+                            <select class="w3-select w3-border w3-round-large" name="option">
+                                <option value="" disabled selected id=chooser>Выберите степень</option>
+                                <option value="1">холостяк</option>
+                                <option value="2">первичный</option>
+                                <option value="3">докторская степень</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Предпочтение страны: </td>
+                        <td></td>
+                        <td>
+                            <select class="w3-select w3-border w3-round-large" name="option">
+                                <option value="" disabled selected id=chooser>Выберите страну</option>
+                                <option value="1">Germany</option>
+                                <option value="2">United States</option>
+                                <option value="3">Netherlands</option>
+                                <option value="4">Japan</option>
+                                <option value="5">Singapore</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr style="border-collapse: collapse;">
+                        <td colspan="3" style="border-bottom: 1px solid black"></td>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr>
+                        <td>пароль: </td>
+                        <td></td>
+                        <td>
+                            <input class="w3-input w3-border w3-round-large" name="password" type="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Подтвердите пароль: </td>
+                        <td></td>
+                        <td>
+                            <input class="w3-input w3-border w3-round-large" name="password" type="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <a href="editSuccess.html">
+                                <button class="w3-button w3-border w3-round-large" style="float:right; margin-top: 15px;">Сохранить изменения</button>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+    <!--footer ru-->
+    <footer class="w3-container w3-light-grey w3-cell-row">
+        <div class="w3-container" style="margin:auto; width:80%;">
+            <!--copyright info-->
+            <div class="w3-cell w3-container w3-left" id="footercell" style="padding-left:3%;">
+                <ul style="list-style-type:none">
+                    <li>ScholarshipsTips</li>
+                    <li>&copy; ScholarshipsTips 2017</li>
+                    <li>All Rights Reserved</li>
+                    <li>www.scholarshipstips.com</li>
+                </ul>
+            </div>
+
+            <!--footer social media-->
+            <div class=" w3-cell w3-container w3-right" id="footercell" style="margin-right:6%">
+                <p>Найдите наши социальные сети!</p>
+                <div class="w3-container w3-center" style="margin:auto; width:60%;">
+                    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                    <i class="fa fa-instagram w3-hover-opacity"></i>
+                    <i class="fa fa-twitter w3-hover-opacity"></i>
+                    <i class="fa fa-google-plus w3-hover-opacity"></i>
+                    <i class="fa fa-youtube w3-hover-opacity"></i>
+                </div>
+            </div>
+
+            <!--page links-->
+            <div class="w3-cell w3-container w3-middle" id="footercell" style="width:50%">
+
+                <ul style="list-style-type:none">
+                    <div class="w3-container" style="padding-left:18.5%; padding-right:0px; margin:auto; width:60%">
+                        <li>
+                            <a href="#" class="">дома</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">О КОМПАНИИ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Как с нами связаться</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Политика конфиденциальности</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Условия использования</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--modal login ru-->
+    <div id="id01" class="modal">
+
+        <form class="modal-content" method='post' action="#">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <center>
+                    <h1>войти</h1>
+                </center>
+            </div>
+
+            <div class="container">
+                <label>
+                    <b>Имя пользователя</b>
+                </label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label>
+                    <b>пароль</b>
+                </label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <input type="checkbox" checked="checked"> Запомнить меня
+                <br>
+                <a href="userProfilePage.html" class="w3-button w3-border w3-gray"> Войти </a>
+                <span class="psw">
+                    <a href="forgotPassword.html">Забыли пароль?</a>
+                </span>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+
+            </div>
+        </form>
+    </div>
+    <!---->
+
+</body>
+
+</html>

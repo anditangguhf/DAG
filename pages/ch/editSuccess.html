@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ScholarshipsTips.com | Edit Profile</title>
+    <link rel="stylesheet" href="../../style/styles.css" type="text/css">
+    <link rel="stylesheet" href="../../style/font-awesome.css">
+    <link rel="stylesheet" href="../../lib/w3.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="w3-bar w3-light-gray" style="padding-left:10px; padding-right:10px">
+        <a href="index.html">
+            <img src="../../images/logo-transparent.png" class="w3-bar-item" alt="homelogo" style="width: 180px">
+        </a>
+        <div style="padding-top: 3px">
+            <div class="w3-dropdown-hover w3-right" style="margin-right:8%">
+                <button class="w3-button w3-transparent">
+                    <i class="fa fa-user-o"></i> Mimi </button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-center" style="width:15%">
+                    <a href="userProfilePage.html">
+                        <img src="../../images/default-user-image.png" class="w3-circle" style="width:110px;" alt="userimage">
+                    </a>
+                    <p>MIMI AISHERA VEALIS</p>
+                    <p>mimishera@gmail.com</p>
+                    <span style="font-size:10px">
+                        <a href="editProfilePage.html">
+                            <i class="fa fa-gear"></i> 编辑个人资料
+                        </a>
+                    </span>
+                    <br>
+                    <span style="font-size:10px">
+                        <a href="../../index.html">
+                            <i class="fa fa-sign-out"></i> 登出
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <!--langdrop ch-->
+            <div class="w3-dropdown-hover w3-right">
+                <button class="w3-button">
+                    <img src="../../images/flags/ch.png" id="langflag"> CH</a>
+                </button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="../ru/editSuccess.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/ru.png" id="langflag"> RU</a>
+                    <a href="../jp/editSuccess.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/jp.png" id="langflag"> JP</a>
+                    <a href="../en/editSuccess.html" class="w3-bar-item w3-button">
+                        <img src="../../images/flags/en.png" id="langflag"> EN</a>
+                </div>
+            </div>
+            <!---->
+        </div>
+    </div>
+
+    <!--content-->
+    <div id="profilecontainer" style="margin-top:30px;">
+        <div class="w3-container w3-light-grey  w3-round-xlarge" style="margin: auto; width:50%; margin-bottom: 30px;">
+            <div style="margin:10px;"></div>
+            <h2>编辑个人资料</h2>
+            <div class="w3-container w3-center" style="margin:auto; width:50%;">
+                <img src="../../images/default-user-image.png" class="w3-circle" style="width:150px;" alt="userimage">
+            </div>
+            <div class="w3-container w3-center" style="margin-top:30px; color: red">
+                <b>您已成功编辑您的信息</b>
+            </div>
+            <div class="w3-container" id='tablecontainer'>
+                <table>
+                    <tr>
+                        <td>你的名字： </td>
+                        <td></td>
+                        <td>
+                            <input class="w3-input w3-border w3-round-large" name="name" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>电子邮件： </td>
+                        <td></td>
+                        <td>
+                            <input class="w3-input w3-border w3-round-large" name="email" type="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>学位偏好： </td>
+                        <td></td>
+                        <td>
+                            <select class="w3-select w3-border w3-round-large" name="option">
+                                <option value="" disabled selected id=chooser>选择学位</option>
+                                <option value="1">单身汉</option>
+                                <option value="2">主</option>
+                                <option value="3">博士学位</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>国家偏好： </td>
+                        <td></td>
+                        <td>
+                            <select class="w3-select w3-border w3-round-large" name="option">
+                                <option value="" disabled selected id=chooser>选择国家</option>
+                                <option value="1">Germany</option>
+                                <option value="2">United States</option>
+                                <option value="3">Netherlands</option>
+                                <option value="4">Japan</option>
+                                <option value="5">Singapore</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr style="border-collapse: collapse;">
+                        <td colspan="3" style="border-bottom: 1px solid black"></td>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr>
+                        <td>密码: </td>
+                        <td></td>
+                        <td>
+                            <input class="w3-input w3-border w3-round-large" name="password" type="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>确认密码： </td>
+                        <td></td>
+                        <td>
+                            <input class="w3-input w3-border w3-round-large" name="password" type="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <a href="editSuccess.html">
+                                <button class="w3-button w3-border w3-round-large" style="float:right; margin-top: 15px;">保存更改</button>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+    <!--footer ch-->
+    <footer class="w3-container w3-light-grey w3-cell-row">
+        <div class="w3-container" style="margin:auto; width:80%;">
+            <!--copyright info-->
+            <div class="w3-cell w3-container w3-left" id="footercell" style="padding-left:3%;">
+                <ul style="list-style-type:none;">
+                    <li>ScholarshipsTips</li>
+                    <li>&copy; ScholarshipsTips 2017</li>
+                    <li>All Rights Reserved</li>
+                    <li>www.scholarshipstips.com</li>
+                </ul>
+            </div>
+
+            <!--footer social media-->
+            <div class=" w3-cell w3-container w3-right" id="footercell" style="margin-right:6%">
+                <p>找到我们的社交媒体！</p>
+                <div class="w3-container w3-center" style="margin:auto; width:100%;">
+                    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                    <i class="fa fa-instagram w3-hover-opacity"></i>
+                    <i class="fa fa-twitter w3-hover-opacity"></i>
+                    <i class="fa fa-google-plus w3-hover-opacity"></i>
+                    <i class="fa fa-youtube w3-hover-opacity"></i>
+                </div>
+            </div>
+
+            <!--page links-->
+            <div class="w3-cell w3-container w3-middle" id="footercell" style="width:50%">
+
+                <ul style="list-style-type:none">
+                    <div class="w3-container" style="padding-left:45%; padding-right:0px; margin:auto; width:60%">
+                        <li>
+                            <a href="#" class="">家</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">关于我们</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">隐私政策</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">使用条款</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--modal login ch-->
+    <div id="id01" class="modal">
+
+        <form class="modal-content" method='post' action="#">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <center>
+                    <h1>登录</h1>
+                </center>
+            </div>
+
+            <div class="container">
+                <label>
+                    <b>用户名</b>
+                </label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label>
+                    <b>密码</b>
+                </label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <input type="checkbox" checked="checked"> 记住我
+                <br>
+                <a href="userProfilePage.html" class="w3-button w3-border w3-gray"> 签到 </a>
+                <span class="psw">
+                    <a href="forgotPassword.html">忘记密码？</a>
+                </span>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+
+            </div>
+        </form>
+    </div>
+    <!---->
+
+</body>
+
+</html>
